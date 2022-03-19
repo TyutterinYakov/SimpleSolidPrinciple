@@ -4,6 +4,7 @@ import org.simple.annotation.InjectByType;
 import org.simple.factory.ObjectFactory;
 import org.simple.domain.Room;
 
+//@Deprecated
 public class Desinfector {
 
     @InjectByType

@@ -4,6 +4,7 @@ import org.simple.annotation.InjectProperty;
 import org.simple.annotation.Singletone;
 
 @Singletone
+@Deprecated
 public class RecommendatorImpl implements Recommendator{
     @InjectProperty
     private String alcohol;
