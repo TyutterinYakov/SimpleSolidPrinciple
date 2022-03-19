@@ -1,4 +1,4 @@
-package org.simple.service;
+package org.simple.annotation;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

@@ -1,10 +1,12 @@
 package org.simple.service;
 
-import org.simple.config.ObjectFactory;
-import org.simple.service.Announcer;
+import org.simple.annotation.InjectByType;
+import org.simple.factory.ObjectFactory;
 
 public class ConsoleAnnouncer implements Announcer {
-    private Recommendator recommendator = ObjectFactory.getInstance().createObject(Recommendator.class);
+    @InjectByType
+    private Recommendator recommendator;
+
     @Override
     public void announce(String message) {
         System.out.println(message);
